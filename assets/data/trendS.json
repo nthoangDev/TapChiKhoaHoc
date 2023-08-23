@@ -1,0 +1,50 @@
+[{
+    "id":1,
+    "image":2,
+    "title":"Vai trò của trí tuệ nhân tạo trong hóa học",
+    "content":"Ứng dụng Trí tuệ nhân tạo và Hóa học để chăm sóc sức khỏe chủ yếu tập trung vào khám phá và phát triển thuốc."
+},
+{
+    "id":2,
+    "image":3,
+    "title":"Vai trò của di truyền học trong thể hình",
+    "content":"Gen của bạn ảnh hưởng đến sự phát triển cơ bắp như thế nào"
+},
+{
+    "id":3,
+    "image":4,
+    "title":"Cánh tay robot phóng lên vũ trụ trên các vệ tinh OneSat của Airbus",
+    "content":"Một cánh tay robot chỉ do các nhà sản xuất châu Âu chế tạo đã vượt qua đánh giá đủ điều kiệnđể phóng vào vũ trụ trên dãy vệ tinh OneSat"
+},
+{
+    "id":4,
+    "image":5,
+    "title":"OECD: 60% công nhân tài chính và sản xuất lo sợ sự thay thế của AI",
+    "content":"Tổ chức Hợp tác và Phát triển Kinh tế (OECD) cho biết, mặc dù tác động của AI đối với thị trường lao động cho đến nay vẫn còn hạn chế."
+},
+{
+    "id":5,
+    "image":6,
+    "title":"Một tàu vũ trụ đầu tiên trên thế giới quay trở lại Trái đất đang đến gần",
+    "content":"Aeolus, vệ tinh đầu tiên quan sát trực tiếp các mặt cắt gió từ không gian, gần như hết nhiên liệu."
+},
+{
+    "id":6,
+    "image":7,
+    "title":"Vương quốc Anh đặt cược vào 11 công nghệ chính để thúc đẩy lĩnh vực vũ trụ của mình",
+    "content":"Cơ quan Vũ trụ Vương quốc Anh đã xác định 11 lĩnh vực công nghệ quan trọng để củng cố vị thế của đất nước trong lĩnh vực vũ trụ.."
+}
+,
+{
+    "id":7,
+    "image":8,
+    "title":"VanMoust: Các công ty có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện",
+    "content":"Từ khi ra mắt vào năm 2009, VanMoust, được biết đến với những chiếc xe đạp thành phố công nghệ cao, kiểu dáng đẹp."
+}
+,
+{
+    "id":8,
+    "image":9,
+    "title":"Dự án xây dựng website môn học tại Trường ĐH Ngoại ngữ – ĐHQGHN được thực hiện nhằm nâng cao năng lực ứng dụng công nghệ thông tin"
+}
+]

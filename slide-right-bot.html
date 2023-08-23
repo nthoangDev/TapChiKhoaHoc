@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body>
+    <!--Go to top-->
+    <div><a id="gototop" href="#" ><i class="fa-solid fa-arrow-up"></i></a></div>
+     <!-- LOGIN & SIGNIN  -->
+     <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                    s    </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!--End Header-->
+ <div class="main">
+        <div class="title-head">
+            <h1>Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ cần một loại pin tốt hơn</h1>
+            <h3>Gặp gỡ chương tiếp theo về đổi mới pin cây nhà lá vườn</h3>
+            <p>Ngày 28 tháng 7 năm 2023 - 6:30 sáng</p>
+        </div>
+       <div class="main-content flex">
+            <div class="title-main flex">
+                <div class="title-main-left">
+                    <img src="./assets/img/ThomasMacaulay.jpg" alt="">
+                    <p>Câu chuyện bởi:</p>
+                    <p>Thomas Macaulay</p>
+                </div>
+                <div class="title-main-right">
+                    <img src="./assets/img/page4.jpg" alt="">
+                    <p>Năm tới, một công ty Hà Lan sẽ lắp một loại pin mới vào máy bay không người lái và - nếu mọi việc diễn ra theo đúng kế hoạch - máy bay không người lái đó sẽ bay lâu hơn 50% so với khả năng của nó với pin lithium-ion (Li-ion) tiêu chuẩn. Thời gian bay gần một giờ, thay vì 34 phút. Máy bay không người lái cải tiến sẽ không nặng hơn trước và pin mới sẽ thực sự nhỏ hơn pin cũ, mặc dù cung cấp nhiều nước hơn.</p>
+                    </br>
+                    <p>Máy bay không người lái cánh cố định và nhiều cánh quạt mới chỉ là bước khởi đầu. LeydenJar cũng đang nhắm mục tiêu vào xe điện và Tim Aanhane, nhà phát triển kinh doanh của công ty, ước tính rằng pin của công ty có thể cho phép một chiếc xe điện đạt được phạm vi hoạt động 800 hoặc 900 km - gần gấp đôi tiêu chuẩn thị trường hiện tại.</p>                       
+                    </br>
+                    <p>Aanhane nói: “Ngành công nghiệp pin đang phát triển rất nhanh. Pin của Leydenjar sử dụng silicon chứ không phải cực dương than chì. Thành phần này, còn được gọi là điện cực âm, là nơi các hạt tích điện âm gọi là ion bị mất electron. Sau đó, các electron di chuyển qua một mạch điện, cung cấp dòng điện.</p>      
+                    <br>
+                    <p><strong>Châu Âu cần tiếp tục cuộc đua công nghệ pin</strong></p>                 
+                    </br>
+                    <p>Đây chỉ là một trong số nhiều công ty khởi nghiệp ở châu Âu đang nỗ lực cải tiến công nghệ pin. Mục tiêu chính của nhiều người trong không gian này là mật độ năng lượng cao — pin cung cấp nhiều năng lượng hơn đáng kể so với các tùy chọn Li-ion hiện có. Điều này có xu hướng được đo bằng lượng năng lượng có sẵn tính bằng watt giờ (Wh) trên một đơn vị thể tích (lít, l) hoặc khối lượng (kilôgam, kg). </p>
+                    </br>
+                    <p>Với cuộc đua nghiên cứu và phát triển ở phía trước, đặc biệt là ở các quốc gia như Trung Quốc, không có thời gian để lãng phí. Châu Âu phải nghĩ ra một số công nghệ pin cực kỳ tốt, nhanh, nếu không sẽ bị bỏ lại phía sau.</p>
+                    </br>
+                    <p>LeydenJar, với số lượng nhân viên hơn 70 người và đã huy động được 100 triệu euro tiền tài trợ cho đến nay, hiện đang thử nghiệm pin nguyên mẫu của mình. Aanhane và các đồng nghiệp của ông có kế hoạch mở một nhà máy lớn ở Hà Lan vào năm 2025. Sản lượng hàng năm tại địa điểm này dự kiến ​​đạt 100 megawatt giờ trong tổng dung lượng pin — gần tương đương với nhu cầu năng lượng của tối đa 100.000 ngôi nhà.</p>            
+                    </br>
+                    <p>Aanhane cho biết: “Silicon là một vật liệu có thể lưu trữ lượng ion lithium gấp 10 lần so với than chì. Đối với toàn bộ pin, điều đó có nghĩa là hiệu suất năng lượng cao hơn khoảng 70% trên mỗi lít — 1.350 Wh/l hoặc 390 Wh/kg.</p>               
+                    </br>
+                    <p><strong>Trận chiến phình ra</strong></p>
+                    <br>
+                    <p>LeydenJar cho biết họ đã giải quyết được một vấn đề quan trọng đã cản trở pin anode silicon trong quá khứ - hiện tượng phồng quá mức. Theo truyền thống, các cực dương này sẽ phồng lên đáng kể khi được sạc, làm giảm tuổi thọ của chúng và có thể khiến chúng không an toàn. Để chống lại điều này, LeydenJar tạo ra các cực dương của nó bằng cách phát triển các cột silicon cực nhỏ, dày vài micromet, trên lá đồng. Aanhane giải thích: “Có khoảng trống ở giữa chúng. “Trong các cột này cũng có độ xốp.”Ông nói: “Những khoảng trống quan trọng trong và xung quanh các cột silicon có nghĩa là phần phồng lên chủ yếu nằm trong chính vật liệu pin và độ phồng của tế bào pin nói chung có thể so sánh với độ phồng của pin cực dương than chì”. Aanhane cho biết thêm rằng hành vi sưng hạn chế này có vẻ ổn định qua hàng trăm chu kỳ — quá trình sạc và xả pin liên tục.</p>       
+                    </br>
+                </div>
+            </div>
+            <aside class="sidebarRelated">
+                <h2>Các bài viết phổ biến</h2>
+                <ol>
+                    <li>Công nghệ an toàn trực tuyến đang làm phụ nữ thất vọng như thế nào</li>
+                    <li>Các nhà phê bình nói rằng lời hứa bảo vệ tin nhắn được mã hóa của Vương quốc Anh là 'ảo tưởng'</li>
+                    <li>Mô hình học sâu có thể đánh cắp dữ liệu bằng cách nghe tổ hợp phím với độ chính xác 95%</li>
+
+                </ol>
+            </aside>
+    </div>
+ </div>
+ <section class="getNews">
+    <div class="container-getNews">
+        <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>   
+        <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+        <input type="email" class="email" placeholder="you@email.com">
+        <input type="button" class="button" value="Đăng ký">
+        <br>
+       <div class="check flex">
+        <input type="checkbox" id="agree">
+        <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử lý dữ liệu cá nhân của tôi*</p>
+       </div>
+       <div class="list-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-linkedin"></i>
+       </div>
+    </div>
+
+ </section>
+ <!--Slides-->
+ <h2 style="margin-top: 1rem;font-size: 3rem;">Những bài viết liên quan</h2>
+ <div class="slide flex">
+    <div class="slide-left" >
+        <div class="slide-left-top" >
+            <img  src="./assets/img/slide-page-8.jpg" alt="Ảnh minh họa">
+            <a href="#">Quỹ đầu tư của Na Uy cảnh báo về rủi ro AI trong khi thu về hàng tỷ đô la từ công nghệ</a>
+            <div class="overlay"></div>
+        </div>
+        <div class="slide-left-bot ">
+            <img  src="./assets/img/img-slide-2.jpg" alt="Ảnh minh họa">
+            <a href="#">Mô hình DeepMind AI mới có thể điều khiển các hành động của rô-bốt mà nó chưa bao giờ được đào tạo để thực hiện</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="slide-right">
+        <div class="slide-right-top flex">
+            <div class="slide-right-top-left ">
+               <img src="./assets/img/slide-page-9.jpg" alt="Ảnh minh họa">
+               <a href="#">Làm thế nào RISC-V có thể soán ngôi Arm với tư cách là Thụy Sĩ của chip máy tính</a>
+               <div class="overlay"></div>
+            </div>
+            <div class="slide-right-top-right ">
+                <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                <a href="#">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right-bot ">
+            <img src="./assets/img/img-slide-5.jpg" alt="Ảnh minh họa">
+            <a href="#">Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ cần một loại pin tốt hơn</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+ </div>
+ <footer>
+    <div class="footer__text container">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.png" alt="logo img">
+            <ul class="footer__icon">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h2>Thông tin liên hệ</h2>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+            </p>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                TP.HCM, Việt Nam</p>
+            <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                        class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+            <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                    thoại/Fax: (+84)36 32 302 688</a></p>
+        </div>
+        <div class="footer__rules">
+            <h2>Chính sách và điều khoản</h2>
+            <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+            <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+            <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+            <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+            <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+    </div>
+</footer>
+<!--End Slides-->
+<script src="./assets/js/trendingS.js"></script>
+<script src="./assets/js/loadJSON.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

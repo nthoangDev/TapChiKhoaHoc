@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body>
+    <!--Go to top-->
+    <div><a id="gototop" href="#" ><i class="fa-solid fa-arrow-up"></i></a></div>
+     <!-- LOGIN & SIGNIN  -->
+     <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header> <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header> <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!--End Header-->
+ <!--content-->
+ <div class="main">
+    <div class="title-head">
+        <h1>Meta chịu thua áp lực của EU, sẽ tìm kiếm sự đồng ý của người dùng cho các quảng cáo được nhắm mục tiêu</h1>
+        <h3>Thay đổi chính sách sẽ ngăn quảng cáo được cá nhân hóa cao, chẳng hạn như dựa trên video bạn xem hoặc bài đăng bạn chia sẻ</h3>
+        <p>Ngày 2 tháng 8 năm 2023 - 3:12 chiều</p>
+    </div>
+   <div class="main-content flex">
+        <div class="title-main flex">
+            <div class="title-main-left">
+                <img src="./assets/img/tacgia.jpg" alt="">
+                <p>Câu chuyện bởi:</p>
+                <p>Siôn Geschwindt</p>
+            </div>
+            <div class="title-main-right">
+                <img src="./assets/img/pageit12.jpg" alt="">
+                <p>Meta vận hành một mô hình quảng cáo được nhắm mục tiêu cao dựa trên các luồng dữ liệu cá nhân mà bạn chia sẻ trên các nền tảng của nó và nó kiếm được hàng chục tỷ đô la mỗi năm. </p>
+                </br>
+                <p>Mặc dù các chiến thuật này khó có thể kết thúc hoàn toàn trong tương lai gần, nhưng công ty có thể sớm cung cấp cho người dùng ở EU cơ hội “chọn tham gia” vào quảng cáo, tờ Wall Street Journal đưa tin. </p>                       
+                </br>
+                <p>Kể từ tháng 4, Meta đã cung cấp cho người dùng ở Châu Âu cơ hội từ chối quảng cáo được cá nhân hóa nhưng chỉ khi họ hoàn thành một biểu mẫu dài trên các trang trợ giúp của nó. Quá trình đó có thể đã hạn chế số lượng người đã chọn không tham gia. </p>                       
+                </br>
+                <p>Tuy nhiên, tùy chọn chọn tham gia sẽ cung cấp cho người dùng sự bảo vệ theo mặc định. Điều đó không có nghĩa là bạn sẽ không bị nhắm mục tiêu bởi các quảng cáo tổng quát, dựa trên dữ liệu nhân khẩu học rộng hơn, chẳng hạn như tuổi của bạn, nhưng nó sẽ ngăn các quảng cáo được cá nhân hóa cao dựa trên, chẳng hạn như video bạn xem hoặc bài đăng bạn chia sẻ. Theo luật của EU, người dùng phải có thể truy cập các nền tảng của Meta ngay cả khi họ chọn không tham gia.  </p>
+                </br>
+                <p>Meta cho biết sự thay đổi bắt nguồn từ một đơn đặt hàng vào tháng 1 của Ủy viên bảo vệ dữ liệu (DPC) của Ireland để đánh giá lại cơ sở pháp lý về cách nó nhắm mục tiêu quảng cáo. Đề xuất này được đưa ra trong bối cảnh áp lực gia tăng từ các cơ quan quản lý quyền riêng tư của EU.</p>
+                </br>
+                <p>Vào tháng 5, DPC đã tát Meta với mức phạt kỷ lục 1,2 tỷ euro vì chuyển dữ liệu người dùng sang Hoa Kỳ, điều mà cơ quan giám sát cho rằng có thể vi phạm quyền riêng tư của công dân theo GDPR. Trên thực tế, Meta đã tích lũy được một nửa trong số 5 tỷ euro tiền phạt được ban hành theo GDPR kể từ khi luật này có hiệu lực cách đây 5 năm. Một bộ quy tắc bảo mật mới, Đạo luật thị trường kỹ thuật số (DMA), cũng buộc gã khổng lồ công nghệ phải trì hoãn việc phát hành ứng dụng xã hội mới Threads ở EU. </p>            
+                </br>
+                <p>Khi EU thắt chặt kiểm soát và tiền phạt chồng chất, có vẻ như gã khổng lồ truyền thông xã hội cuối cùng cũng có thể oằn mình. Thay đổi đối với chính sách chấp thuận quảng cáo của nó có thể có hiệu lực chỉ sau ba tháng nếu EU đồng ý với đề xuất này. </p>               
+                </br>
+                <p>Các quy định hạn chế việc sử dụng dữ liệu cá nhân của công ty cho quảng cáo có thể là một tác động đáng kể đến nguồn thu nhập chính của công ty. Công ty cho biết khu vực châu Âu đã tạo ra 23% trong số 31,5 tỷ đô la doanh thu quảng cáo trong quý hai năm nay.</p>       
+                </br>
+                <p>Tuy nhiên, Max Schrems, nhà vận động quyền riêng tư, người đã đệ trình khiếu nại GDPR về sự chấp thuận bắt buộc ban đầu đối với Meta vào tháng 5 năm 2018, cho biết ông sẽ giám sát chặt chẽ chính xác cách Meta áp dụng chính sách mới. </p>
+                <br>
+                <p>“Chúng tôi sẽ xem liệu Meta có thực sự áp dụng yêu cầu đồng ý cho tất cả hoạt động sử dụng dữ liệu cá nhân cho quảng cáo hay không,” anh ấy nói thông qua tổ chức phi lợi nhuận về quyền riêng tư của mình . “Cho đến nay họ nói về quảng cáo 'được cá nhân hóa cao' hoặc 'hành vi' và không rõ điều này có nghĩa là gì.</p>
+                <br>
+                <p>GDPR bao gồm tất cả các loại cá nhân hóa, kể cả những thứ như tuổi của bạn, đây không phải là một 'hành vi'. Rõ ràng là chúng tôi sẽ tiếp tục kiện tụng nếu Meta không áp dụng đầy đủ luật.”</p>
+            </div>
+        </div>
+        <aside class="sidebarRelated">
+            <h2>Các bài viết phổ biến</h2>
+            <ol>
+                <li>Công nghệ an toàn trực tuyến đang làm phụ nữ thất vọng như thế nào</li>
+                <li>Các nhà phê bình nói rằng lời hứa bảo vệ tin nhắn được mã hóa của Vương quốc Anh là 'ảo tưởng'</li>
+                <li>Mô hình học sâu có thể đánh cắp dữ liệu bằng cách nghe tổ hợp phím với độ chính xác 95%</li>
+                <li>Công nghệ vô tuyến cơ sở hạ tầng quan trọng 'dễ dàng bị tấn công' thông qua cửa hậu có chủ ý</li>
+            </ol>
+        </aside>
+</div>
+</div>
+<!--end content-->
+<!--get news-->
+<section class="getNews">
+    <div class="container-getNews">
+        <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>   
+        <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+        <input type="email" class="email" placeholder="you@email.com">
+        <input type="button" class="button" value="Đăng ký">
+        <br>
+       <div class="check flex">
+        <input type="checkbox" id="agree">
+        <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử lý dữ liệu cá nhân của tôi*</p>
+       </div>
+       <div class="list-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-linkedin"></i>
+       </div>
+    </div>
+</section>
+<!--end get news-->
+<!--Slides-->
+<h2 style="margin-top: 1rem;font-size: 3rem;">Những bài viết liên quan</h2>
+<div class="slide flex">
+    <div class="slide-left" >
+        <div class="slide-left-top" >
+            <img  src="./assets/img/slide-page-1.jpg" alt="Ảnh minh họa">
+            <a href="#">3 lý do khiến internet phát cuồng về biểu cảm khuôn mặt của robot</a>
+            <div class="overlay"></div>
+        </div>
+        <div class="slide-left-bot ">
+            <img  src="./assets/img/slide-page-2.jpg" alt="Ảnh minh họa">
+            <a href="#">Các nhà khoa học đã phát triển 'robot sống' có khả năng sinh sản</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="slide-right">
+        <div class="slide-right-top flex">
+            <div class="slide-right-top-left ">
+               <img src="./assets/img/slide-page-3.jpg" alt="Ảnh minh họa">
+               <a href="#">Vẫn chưa quá muộn để ngăn chặn cuộc nổi dậy của robot sát thủ</a>
+               <div class="overlay"></div>
+            </div>
+            <div class="slide-right-top-right ">
+                <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                <a href="#">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right-bot ">
+            <img src="./assets/img/img-slide-5.jpg" alt="Ảnh minh họa">
+            <a href="#">Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ cần một loại pin tốt hơn</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+ </div>
+ <footer>
+    <div class="footer__text container">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.png" alt="logo img">
+            <ul class="footer__icon">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h2>Thông tin liên hệ</h2>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+            </p>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                TP.HCM, Việt Nam</p>
+            <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                        class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+            <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                    thoại/Fax: (+84)36 32 302 688</a></p>
+        </div>
+        <div class="footer__rules">
+            <h2>Chính sách và điều khoản</h2>
+            <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+            <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+            <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+            <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+            <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+    </div>
+</footer>
+<!--End Slides-->
+<script src="./assets/js/trendingS.js"></script>
+<script src="./assets/js/loadJSON.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

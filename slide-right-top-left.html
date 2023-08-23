@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body>
+    <!--Go to top-->
+    <div><a id="gototop" href="#" ><i class="fa-solid fa-arrow-up"></i></a></div>
+     <!-- LOGIN & SIGNIN  -->
+     <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!--End Header-->
+ <!--content-->
+ <div class="main">
+    <div class="title-head">
+        <h1>Người tiên phong trong thế giới ảo nhắm mục tiêu thể thao để hồi sinh giấc mơ metaverse</h1>
+        <h3>Trải nghiệm của người hâm mộ đã trở thành bệ phóng mới cho metaverse</h3>
+        <p>Ngày 31 tháng 7 năm 2023 - 7:00 sáng</p>
+    </div>
+   <div class="main-content flex">
+        <div class="title-main flex">
+            <div class="title-main-left">
+                <img src="./assets/img/ThomasMacaulay.jpg" alt="">
+                <p>Câu chuyện bởi:</p>
+                <p>Thomas Macaulay</p>
+            </div>
+            <div class="title-main-right">
+                <img src="./assets/img/slide-page-rtr.jpg" alt="">
+                <p>Trong một chuyến thăm thông thường đến một sân vận động thể thao, bạn sẽ không đụng phải những người khổng lồ cao 20 mét bên ngoài cổng. Nhưng đây không phải là sân vận động thể thao điển hình của bạn. Đó là sân bóng ảo MLB — metaverse đầu tiên cho một giải đấu thể thao chuyên nghiệp. </p>
+                </br>
+                <p>Địa điểm mở cửa vào ngày 8 tháng 7, cho một bữa tiệc đồng hồ trong Cuối tuần All-Star của Giải bóng chày Major League. Tổ chức sự kiện là những người khổng lồ đã nói ở trên, những người bắt đầu lễ hội bằng một lời trêu chọc:</p>                       
+                </br>
+                <p>“Ai biết được những giải thưởng nào sẽ giành được? Hãy chắc chắn rằng bạn khám phá và vui chơi.”</p>                       
+                </br>
+                <p>Các ưu đãi cho sự tham gia được nhấn mạnh. Chắc chắn, bạn chỉ có thể trò chuyện với những người hâm mộ đồng nghiệp và xem trận đấu trên jumbotrons của địa điểm, chuyển sang chế độ toàn màn hình trên thiết bị của bạn. Nhưng những người khổng lồ thực sự muốn bạn thu thập điểm để nhận giải thưởng. Họ đưa ra vô số cách để giành chiến thắng: xem qua trang web, chơi trò chơi nhỏ, làm câu đố, thu thập thẻ bóng chày hoặc chỉ ở lại cho đến khi tiếng còi mãn cuộc vang lên.</p>
+                </br>
+                <p>Là một người theo chủ nghĩa thuần túy, nó không thể so sánh với trải nghiệm ngày mai truyền thống của bia trước trận đấu, những bài tụng kinh tục tĩu và chủ nghĩa côn đồ lỗi thời. Nhưng đây không phải là một trải nghiệm ngày mai truyền thống. Đối tượng mục tiêu là những người hâm mộ đang xem tại nhà trên khắp thế giới — và có rất nhiều cơ hội để kiếm tiền từ họ.</p>
+                </br>
+                <p>Khảo sát cho thấy hầu hết người xem TV cũng đang sử dụng màn hình thứ hai. Trong số Gen Z và Millenials, tỷ lệ này cao tới 95% . Trong khi xem thể thao, họ cũng sử dụng mạng xã hội, mua sắm, nhắn tin và chơi game. Gen Z cũng có khả năng trả tiền cho nội dung thể thao cao gấp đôi so với thế hệ bùng nổ. Nhưng họ ít có khả năng xem toàn bộ các sự kiện trực tiếp hơn.  </p>            
+                </br>
+                <p>Luis Vicente, chủ tịch của Apex Capital, một công ty đầu tư thể thao và giải trí, cho biết: “Chúng tôi biết rằng các thế hệ cũ vẫn đang xem toàn bộ sự kiện theo một trải nghiệm truyền thống hơn. “Đối với khán giả trẻ tuổi, bạn cần phải sáng tạo hơn và tiếp tục cung cấp cho họ nội dung theo những cách mới mẻ phù hợp với cách họ muốn tận hưởng những khoảnh khắc thể thao yêu thích một cách tự nhiên”</p>               
+                </br>
+                <p>Sân bóng ảo MLB hứa hẹn sẽ tích hợp các phương thức tiêu thụ này. Nhưng cần có thêm bằng chứng rằng nó không chỉ là một mánh lới quảng cáo hay một trò chơi nhái của Cuộc sống thứ hai .</p>       
+                </br>
+                <p>Vài ngày sau, có một nỗ lực mới nhằm chuyển đổi những người hoài nghi. Một thế giới ảo khác đã mở ra một trải nghiệm thể thao rất khó khăn: hỏi đáp với Nwankwo Kanu, một cựu cầu thủ bóng đá nổi tiếng của đội bóng Anh Arsenal.</p>
+                </br>
+                <p>Trong thế giới ảo này, trọng tâm chuyển từ giải đấu và đội sang vận động viên và cộng đồng. Hơn 1.100 người tham dự có thể tương tác với nhau và với Kanu. Oleksandr Zinchenko, một cầu thủ đáng gờm của đội Arsenal hiện tại, đã xuất hiện để đặt một câu hỏi. Ngoài ra còn có một cuộc phỏng vấn trang trọng hơn, được tổ chức bởi Robbie Lyle, người sáng lập nền tảng người hâm mộ Arsenal AFTV. </p>
+                <br>
+                <p>Lyle nói: “Bóng đá là về các ý kiến ​​và những trải nghiệm này cho phép người hâm mộ đến và trò chuyện về bóng đá. “Tôi thấy metaverse đang trở thành một nền tảng khác như Twitter, TikTok, YouTube, nơi người hâm mộ có thể tương tác và vui vẻ cùng nhau.”</p>
+                <br>
+                <p>Cả sân bóng và Kanu Q&A đều được phát triển bởi Improbable, một công ty công nghệ có trụ sở tại London. Được thành lập vào năm 2012, các mô phỏng khổng lồ của công ty đã thu hút được mức định giá 3 tỷ đô la (2,7 tỷ euro) , nhưng con đường dẫn đến lợi nhuận là một con đường gập ghềnh. Năm 2021, công ty ghi nhận khoản lỗ 152 triệu bảng Anh. </p>
+                <br>
+                <p>Tháng 1 năm sau, Improbable tiết lộ một chiến lược mới: rời xa các trò chơi để nhân đôi số tiền trong metaverse.</p>
+                <br>
+                <p><strong>Di chuyển đến một thế giới mới</strong></p>
+                <br>
+                <p>Sau thông báo, Improbable đã bán cổ phần của mình trong các studio trò chơi Midwinter và Inflexion, cũng như hoạt động kinh doanh quốc phòng và an ninh quốc gia. Ở vị trí của họ là một trọng tâm mới về cơ sở hạ tầng quan trọng cho thế giới ảo - hệ thống ống nước của metaverse. </p>
+                <br>
+                <p>Nền tảng của dự án là công nghệ Morpheus của Improbable. Là hậu duệ của sản phẩm SpatialOS trước đó của công ty, Morpheus mang lại cảm giác hiện diện và tương tác xã hội cho hơn 10.000 người trong không gian ảo dày đặc. 
+
+                    Morpheus cũng cung cấp năng lượng cho trung tâm chiến lược của Improbable: MSquared (M2) — một mạng lưới các metaverse có thể tương tác với nhau. Ra mắt vào tháng 6, mạng kết hợp các công nghệ, dịch vụ và tiêu chuẩn — cũng như khoản tài trợ trị giá 150 triệu đô la Mỹ (138 triệu euro) — để cung cấp và liên kết các trải nghiệm kỹ thuật số.</p>
+                <br>
+                <p><strong>Thể thao bước vào metaverse</strong></p>
+                <br>
+                <p>Những người ủng hộ Metaverse có nhiều hy vọng cho thể thao. Các nhà phân tích tại công ty đầu tư Web3 Studios dự đoán rằng giá trị của metaverse thể thao có thể đạt 80 tỷ đô la (72,3 tỷ euro) vào năm 2030.
+
+                    Đương nhiên, những ước tính lạc quan như vậy sẽ gây ra sự hoài nghi - đặc biệt khi chúng phục vụ cho lợi ích được đầu tư. Nhưng thể thao nổi tiếng là bị thiếu tiền. 
+                    
+                    Lấy câu lạc bộ bóng đá Manchester United. Đội bóng Anh ước tính có 1,1 tỷ người hâm mộ - nhiều nhất so với bất kỳ đội bóng nào trên thế giới. Trong năm tài chính kết thúc vào tháng 6 năm 2022, câu lạc bộ đã ghi nhận doanh thu là 583,2 triệu bảng Anh (674,9 triệu euro), có nghĩa là United chỉ tạo ra 0,61 euro cho mỗi người hâm mộ trong năm đó. 
+                    
+                    Ngược lại, Amazon trước đây đã báo cáo có 200 triệu khách truy cập hàng tháng chỉ riêng ở Hoa Kỳ. Trong suốt một năm, họ kiếm tiền với doanh thu hàng năm trên €902 trên mỗi khách truy cập.</p>
+                <br>
+                <img src="./assets/img/slide-page-10.webp" alt="">    
+            </div>
+        </div>
+        <aside class="sidebarRelated">
+            <h2>Các bài viết phổ biến</h2>
+            <ol>
+                <li>Công nghệ an toàn trực tuyến đang làm phụ nữ thất vọng như thế nào</li>
+                <li>Các nhà phê bình nói rằng lời hứa bảo vệ tin nhắn được mã hóa của Vương quốc Anh là 'ảo tưởng'</li>
+                <li>Mô hình học sâu có thể đánh cắp dữ liệu bằng cách nghe tổ hợp phím với độ chính xác 95%</li>
+                <li>Công nghệ vô tuyến cơ sở hạ tầng quan trọng 'dễ dàng bị tấn công' thông qua cửa hậu có chủ ý</li>
+            </ol>
+        </aside>
+</div>
+</div>
+<!--end content-->
+<!--get news-->
+<section class="getNews">
+    <div class="container-getNews">
+        <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>   
+        <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+        <input type="email" class="email" placeholder="you@email.com">
+        <input type="button" class="button" value="Đăng ký">
+        <br>
+       <div class="check flex">
+        <input type="checkbox" id="agree">
+        <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử lý dữ liệu cá nhân của tôi*</p>
+       </div>
+       <div class="list-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-linkedin"></i>
+       </div>
+    </div>
+</section>
+<!--end get news-->
+<!--Slides-->
+<h2 style="margin-top: 1rem;font-size: 3rem;">Những bài viết liên quan</h2>
+<div class="slide flex">
+    <div class="slide-left" >
+        <div class="slide-left-top" >
+            <img  src="./assets/img/slide-page-1.jpg" alt="Ảnh minh họa">
+            <a href="#">3 lý do khiến internet phát cuồng về biểu cảm khuôn mặt của robot</a>
+            <div class="overlay"></div>
+        </div>
+        <div class="slide-left-bot ">
+            <img  src="./assets/img/slide-page-2.jpg" alt="Ảnh minh họa">
+            <a href="#">Các nhà khoa học đã phát triển 'robot sống' có khả năng sinh sản</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="slide-right">
+        <div class="slide-right-top flex">
+            <div class="slide-right-top-left ">
+               <img src="./assets/img/slide-page-3.jpg" alt="Ảnh minh họa">
+               <a href="#">Vẫn chưa quá muộn để ngăn chặn cuộc nổi dậy của robot sát thủ</a>
+               <div class="overlay"></div>
+            </div>
+            <div class="slide-right-top-right ">
+                <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                <a href="#">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right-bot ">
+            <img src="./assets/img/img-slide-5.jpg" alt="Ảnh minh họa">
+            <a href="#">Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ cần một loại pin tốt hơn</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+ </div>
+ <footer>
+    <div class="footer__text container">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.png" alt="logo img">
+            <ul class="footer__icon">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h2>Thông tin liên hệ</h2>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+            </p>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                TP.HCM, Việt Nam</p>
+            <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                        class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+            <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                    thoại/Fax: (+84)36 32 302 688</a></p>
+        </div>
+        <div class="footer__rules">
+            <h2>Chính sách và điều khoản</h2>
+            <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+            <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+            <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+            <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+            <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+    </div>
+</footer>
+<!--End Slides-->
+<script src="./assets/js/trendingS.js"></script>
+<script src="./assets/js/loadJSON.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

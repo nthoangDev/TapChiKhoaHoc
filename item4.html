@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body>
+    <!--Go to top-->
+    <div><a id="gototop" href="#" ><i class="fa-solid fa-arrow-up"></i></a></div>
+     <!-- LOGIN & SIGNIN  -->
+     <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header> 
+ <!--End Header-->
+ <!--content-->
+ <div class="main">
+    <div class="title-head">
+        <h1>Na Uy phạt Meta 1 TRIỆU vương miện mỗi ngày do thu thập dữ liệu cho quảng cáo hành vi</h1>
+        <h3>Quảng cáo hành vi của Facebook đã khiến các nhà quản lý châu Âu tức giận</h3>
+        <p>Ngày 8 tháng 8 năm 2023 - 12:57 chiều</p>
+    </div>
+   <div class="main-content flex">
+        <div class="title-main flex">
+            <div class="title-main-left">
+                <img src="./assets/img/ThomasMacaulay.jpg" alt="">
+                <p>Câu chuyện bởi:</p>
+                <p>Thomas Macaulay</p>
+            </div>
+            <div class="title-main-right">
+                <img src="./assets/img/item-04.jpg" alt="">
+                <p>Danh sách trừng phạt quyền riêng tư của Châu Âu vào năm 2023 của Meta chỉ còn một thời gian ngắn nữa. Sau khoản tiền phạt 390 triệu euro đối với quảng cáo được cá nhân hóa bất hợp pháp, 5,5 triệu euro khác đối với các vi phạm tương tự trong WhatsApp và kỷ lục GDPR 1,2 tỷ euro đối với truyền dữ liệu không an toàn, tuần này, một hình phạt khác đã đến — và bản án đã không gây thất vọng. </p>
+                </br>
+                <p>Các nhà quản lý Na Uy đã yêu cầu một con số tròn trĩnh có thể khiến Dr Evil tự hào: 1 TRIỆU crown (89.000 €) mỗi ngày . Các hình phạt sẽ bắt đầu vào ngày 14 tháng 8, nhưng Meta muốn có lệnh tạm thời chống lại lệnh này, Reuters đưa tin .</p>                       
+                </br>
+                <p>Phán quyết này được đưa ra sau tin tức vào tháng trước rằng Na Uy sẽ tạm thời cấm quảng cáo hành vi trên Facebook và Instagram do vi phạm quyền riêng tư . Vào thời điểm đó, cơ quan bảo vệ dữ liệu của quốc gia, Datatilsynet, đã cảnh báo rằng Meta cũng sẽ bị phạt nếu không giải quyết các vi phạm.</p>                       
+                </br>
+                <p>Cơ quan quản lý đã trích dẫn nhiều rủi ro khác nhau khi sử dụng hành vi trực tuyến để nhắm mục tiêu quảng cáo, từ việc thúc đẩy sự phân biệt đối xử đến phá hoại nền dân chủ.</p>
+                </br>
+                <p>“Giám sát thương mại xâm lấn cho mục đích tiếp thị là một trong những rủi ro lớn nhất đối với việc bảo vệ dữ liệu trên internet ngày nay. Người dùng phải có đủ quyền kiểm soát đối với dữ liệu của chính họ và mọi hoạt động theo dõi phải được hạn chế,” Tobias Judin, người đứng đầu Khu vực Quốc tế của Datatilsynet, cho biết trong một tuyên bố.</p>
+                </br>
+                <p>Khi phản ứng dữ dội ngày càng tăng, Meta đã cam kết vào tuần trước để tìm kiếm sự đồng ý từ người dùng EU để hiển thị quảng cáo được cá nhân hóa. Nhưng biện pháp này không gây được ấn tượng với Datatilsynet. </p>            
+                </br>
+                <p>“Theo Meta, sớm nhất họ sẽ mất vài tháng để triển khai… Và chúng tôi không biết cơ chế đồng ý sẽ như thế nào,” Judin nói với Reuters.</p>               
+                </br>
+                <p>Do đó, Datatilsynet sẽ đưa ra các khoản tiền phạt hàng ngày cho đến ít nhất là ngày 3 tháng 11 — nhưng cơ quan quản lý cũng đã đe dọa sẽ áp dụng chúng vĩnh viễn.</p>       
+                </br>
+                <p>Đối với Meta, những biện pháp trừng phạt như vậy đã trở nên quen thuộc một cách đau đớn. Vào tháng 5, mạng xã hội khổng lồ này bị phát hiện đã tích lũy được hơn một nửa trong tổng số 4 tỷ euro tiền phạt do vi phạm GDPR.</p>
+            </div>
+        </div>
+        <aside class="sidebarRelated">
+            <h2>Các bài viết phổ biến</h2>
+            <ol>
+                <li>Công nghệ an toàn trực tuyến đang làm phụ nữ thất vọng như thế nào</li>
+                <li>Các nhà phê bình nói rằng lời hứa bảo vệ tin nhắn được mã hóa của Vương quốc Anh là 'ảo tưởng'</li>
+                <li>Mô hình học sâu có thể đánh cắp dữ liệu bằng cách nghe tổ hợp phím với độ chính xác 95%</li>
+                <li>Công nghệ vô tuyến cơ sở hạ tầng quan trọng 'dễ dàng bị tấn công' thông qua cửa hậu có chủ ý</li>
+            </ol>
+        </aside>
+</div>
+</div>
+<!--end content-->
+<!--get news-->
+<section class="getNews">
+    <div class="container-getNews">
+        <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>   
+        <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+        <input type="email" class="email" placeholder="you@email.com">
+        <input type="button" class="button" value="Đăng ký">
+        <br>
+       <div class="check flex">
+        <input type="checkbox" id="agree">
+        <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử lý dữ liệu cá nhân của tôi*</p>
+       </div>
+       <div class="list-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-linkedin"></i>
+       </div>
+    </div>
+</section>
+<!--end get news-->
+<!--Slides-->
+<h2 style="margin-top: 1rem;font-size: 3rem;">Những bài viết liên quan</h2>
+<div class="slide flex">
+    <div class="slide-left" >
+        <div class="slide-left-top" >
+            <img  src="./assets/img/slide-page-1.jpg" alt="Ảnh minh họa">
+            <a href="#">3 lý do khiến internet phát cuồng về biểu cảm khuôn mặt của robot</a>
+            <div class="overlay"></div>
+        </div>
+        <div class="slide-left-bot ">
+            <img  src="./assets/img/slide-page-2.jpg" alt="Ảnh minh họa">
+            <a href="#">Các nhà khoa học đã phát triển 'robot sống' có khả năng sinh sản</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="slide-right">
+        <div class="slide-right-top flex">
+            <div class="slide-right-top-left ">
+               <img src="./assets/img/slide-page-3.jpg" alt="Ảnh minh họa">
+               <a href="#">Vẫn chưa quá muộn để ngăn chặn cuộc nổi dậy của robot sát thủ</a>
+               <div class="overlay"></div>
+            </div>
+            <div class="slide-right-top-right ">
+                <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                <a href="#">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right-bot ">
+            <img src="./assets/img/img-slide-5.jpg" alt="Ảnh minh họa">
+            <a href="#">Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ cần một loại pin tốt hơn</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+ </div>
+ <footer>
+    <div class="footer__text container">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.png" alt="logo img">
+            <ul class="footer__icon">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h2>Thông tin liên hệ</h2>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+            </p>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                TP.HCM, Việt Nam</p>
+            <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                        class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+            <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                    thoại/Fax: (+84)36 32 302 688</a></p>
+        </div>
+        <div class="footer__rules">
+            <h2>Chính sách và điều khoản</h2>
+            <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+            <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+            <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+            <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+            <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+    </div>
+</footer>
+<!--End Slides-->
+<script src="./assets/js/trendingS.js"></script>
+<script src="./assets/js/loadJSON.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

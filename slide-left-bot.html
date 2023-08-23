@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body>
+    <!--Go to top-->
+    <div><a id="gototop" href="#" ><i class="fa-solid fa-arrow-up"></i></a></div>
+     <!-- LOGIN & SIGNIN  -->
+     <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!--End Header-->
+ <!--content-->
+ <div class="main">
+    <div class="title-head">
+        <h1>Mô hình DeepMind AI mới có thể điều khiển các hành động của rô-bốt mà nó chưa bao giờ được đào tạo để thực hiện</h1>
+        <h3>Hệ thống học từ dữ liệu web</h3>
+        <p>Ngày 1 tháng 8 năm 2023 - 4:39 chiều</p>
+    </div>
+   <div class="main-content flex">
+        <div class="title-main flex">
+            <div class="title-main-left">
+                <img src="./assets/img/ThomasMacaulay.jpg" alt="">
+                <p>Câu chuyện bởi:</p>
+                <p>Thomas Macaulay</p>
+            </div>
+            <div class="title-main-right">
+                <img src="./assets/img/slide-page-lb.jpg" alt="">
+                <p>Google DeepMind có một mô hình AI mới có thể điều khiển các nhiệm vụ bằng rô-bốt mà nó chưa bao giờ được huấn luyện để thực hiện.</p>
+                </br>
+                <p>Được đặt tên là RT-2, mô hình học hỏi từ dữ liệu web và robot. Sau đó, nó biến thông tin này thành các hướng dẫn đơn giản cho máy móc.</p>                       
+                </br>
+                <p>Trong các thử nghiệm, mô hình được yêu cầu thực hiện các hành động chưa từng thấy trong dữ liệu rô-bốt, chẳng hạn như đặt cam vào một chiếc bát giống hệt nhau. Để thực hiện theo các lệnh này, hệ thống phải dịch kiến ​​thức từ dữ liệu dựa trên web. Theo DeepMind, mô hình này có tỷ lệ thành công 62% cho các hoạt động này — gấp đôi so với mô hình tiền nhiệm của nó, RT-1.</p>                       
+                </br>
+                <p>Vincent Vanhoucke, người đứng đầu bộ phận robot của DeepMind cho biết: “Giống như các mô hình ngôn ngữ được đào tạo trên văn bản từ web để tìm hiểu các ý tưởng và khái niệm chung, RT-2 chuyển kiến ​​thức từ dữ liệu web để thông báo hành vi của rô bốt. “ Nói cách khác, RT-2 có thể nói chuyện với robot.”</p>
+                <img src="./assets/img/pagelb.webp" alt="">
+                </br>
+                <p>Các thử nghiệm cho thấy RT-2 có khả năng tổng quát hóa ấn tượng. Nó cũng có một sự hiểu biết trực quan và ngữ nghĩa được cải thiện về dữ liệu robot mà trước đây chưa từng gặp.</p>
+                </br>
+                <p>Đáng chú ý là mô hình có thể sử dụng lý luận thô sơ để tuân theo các lệnh mới của người dùng. Thật ấn tượng, nó thậm chí có thể thực hiện suy luận ngữ nghĩa nhiều giai đoạn. Chẳng hạn, khi được hướng dẫn chọn một vật có thể dùng làm búa, RT-2 đã xác định chính xác một tảng đá là lựa chọn tốt nhất.</p>            
+                </br>
+                <p>Trong một đánh giá khác, người mẫu được yêu cầu đẩy một chai nước sốt cà chua về phía một khối lập phương màu xanh lam.</p>               
+                </br>
+                <p>Có một số mục trong cảnh, nhưng mục duy nhất trong tập dữ liệu huấn luyện là khối lập phương. Tuy nhiên, RT-2 đã đẩy thành công sốt cà chua đến đích đã chỉ định.</p>       
+                </br>
+                <p>Vanhoucke cho biết: “RT-2 không chỉ cho thấy những tiến bộ trong trí tuệ nhân tạo đang lan nhanh như thế nào đối với người máy, mà nó còn cho thấy nhiều hứa hẹn đối với những người máy có mục đích chung hơn”. “Mặc dù vẫn còn rất nhiều việc phải làm để tạo điều kiện cho rô bốt hữu ích trong môi trường lấy con người làm trung tâm, nhưng RT-2 cho chúng ta thấy một tương lai thú vị cho ngành rô bốt chỉ trong tầm tay.”</p>
+            </div>
+        </div>
+        <aside class="sidebarRelated">
+            <h2>Các bài viết phổ biến</h2>
+            <ol>
+                <li>Làm thế nào RISC-V có thể soán ngôi Arm với tư cách là Thụy Sĩ của chip máy tính</li>
+                <li>Các nhà phê bình nói rằng lời hứa bảo vệ tin nhắn được mã hóa của Vương quốc Anh là 'ảo tưởng'</li>
+                <li>Mô hình học sâu có thể đánh cắp dữ liệu bằng cách nghe tổ hợp phím với độ chính xác 95%</li>
+                <li>Quỹ đầu tư của Na Uy cảnh báo về rủi ro AI trong khi thu về hàng tỷ đô la từ công nghệ</li>
+            </ol>
+        </aside>
+</div>
+</div>
+<!--end content-->
+<!--get news-->
+<section class="getNews">
+    <div class="container-getNews">
+        <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>   
+        <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+        <input type="email" class="email" placeholder="you@email.com">
+        <input type="button" class="button" value="Đăng ký">
+        <br>
+       <div class="check flex">
+        <input type="checkbox" id="agree">
+        <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử lý dữ liệu cá nhân của tôi*</p>
+       </div>
+       <div class="list-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-linkedin"></i>
+       </div>
+    </div>
+</section>
+<!--end get news-->
+<!--Slides-->
+<h2 style="margin-top: 1rem;font-size: 3rem;">Những bài viết liên quan</h2>
+<div class="slide flex">
+    <div class="slide-left" >
+        <div class="slide-left-top" >
+            <img  src="./assets/img/slide-page-1.jpg" alt="Ảnh minh họa">
+            <a href="#">3 lý do khiến internet phát cuồng về biểu cảm khuôn mặt của robot</a>
+            <div class="overlay"></div>
+        </div>
+        <div class="slide-left-bot ">
+            <img  src="./assets/img/slide-page-2.jpg" alt="Ảnh minh họa">
+            <a href="#">Các nhà khoa học đã phát triển 'robot sống' có khả năng sinh sản</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="slide-right">
+        <div class="slide-right-top flex">
+            <div class="slide-right-top-left ">
+               <img src="./assets/img/slide-page-3.jpg" alt="Ảnh minh họa">
+               <a href="#">Vẫn chưa quá muộn để ngăn chặn cuộc nổi dậy của robot sát thủ</a>
+               <div class="overlay"></div>
+            </div>
+            <div class="slide-right-top-right ">
+                <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                <a href="#">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right-bot ">
+            <img src="./assets/img/img-slide-5.jpg" alt="Ảnh minh họa">
+            <a href="#">Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ cần một loại pin tốt hơn</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+ </div>
+ <footer>
+    <div class="footer__text container">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.png" alt="logo img">
+            <ul class="footer__icon">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h2>Thông tin liên hệ</h2>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+            </p>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                TP.HCM, Việt Nam</p>
+            <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                        class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+            <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                    thoại/Fax: (+84)36 32 302 688</a></p>
+        </div>
+        <div class="footer__rules">
+            <h2>Chính sách và điều khoản</h2>
+            <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+            <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+            <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+            <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+            <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+    </div>
+</footer>
+<!--End Slides-->
+<script src="./assets/js/trendingS.js"></script>
+<script src="./assets/js/loadJSON.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>

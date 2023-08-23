@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <!-- LOGIN & SIGNIN  -->
+    <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <!--Slides-->
+    <div class="slide flex">
+        <div class="slide-left">
+            <div class="slide-left-top">
+                <img src="./assets/img/img-slide-1.jpg" alt="Ảnh minh họa">
+                <a href="./slide-left-top.html" target="_blank">Công nghệ đang phá vỡ các rào cản về khả năng tiếp
+                    cận
+                    trong giao thông vận tải — đây là cách</a>
+                <div class="overlay"></div>
+            </div>
+            <div class="slide-left-bot ">
+                <img src="./assets/img/img-slide-2.jpg" alt="Ảnh minh họa">
+                <a href="./slide-left-bot.html" target="_blank">Mô hình DeepMind AI mới có thể điều khiển các hành
+                    động
+                    của rô-bốt mà nó chưa bao giờ được đào tạo để thực hiện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right trans-righttoleft">
+            <div class="slide-right-top flex">
+                <div class="slide-right-top-left ">
+                    <img src="./assets/img/img-slide-3.jpg" alt="Ảnh minh họa">
+                    <a href="./slide-right-top-left.html" target="_blank">Người tiên phong trong thế giới ảo nhắm
+                        mục
+                        tiêu thể thao để hồi sinh giấc mơ metaverse</a>
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-right-top-right ">
+                    <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                    <a href="./item4.html">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm
+                        của một siêu sao
+                        xe đạp điện</a>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="slide-right-bot ">
+                <img src="./assets/img/img-slide-5.jpg" alt="Ảnh minh họa">
+                <a href="./slide-right-bot.html" target="_blank">Các công ty khởi nghiệp châu Âu: Tôi nghĩ chúng ta sẽ
+                    cần một loại pin tốt hơn</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+    <!--End Slides-->
+
+    <!--Section one-->
+    <section class="sectionOne ">
+        <div class="container-sectionOne">
+            <div class="heading">
+                <h1>Tin mới nhất</h1>
+            </div>
+            <div class="inner-wrap">
+                <div class="inner-item trans-lefttoright">
+                    <img src="assets/img/item-01.jpg" alt="">
+                    <div class="inner-title" id="title">
+                        <a href="./item12.html" target="_blank">Công nghệ pin kẽm mới có thể lưu trữ và sản xuất hydro xanh theo yêu
+                            cầu</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-lefttoright">
+                    <img src="assets/img/item-02.jpg" alt="">
+                    <div class="inner-title">
+                        <a href="./item11.html" target="_blank">Ngã rẽ sự nghiệp: 6 dấu hiệu cho thấy bạn đã phát
+                            triển
+                            vượt xa công việc của mình</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-righttoleft">
+                    <img src="assets/img/item-03.jpg" alt="">
+                    <div class="inner-title">
+                        <a target="_blank" href="./slide-left-bot.html">Các vệ tinh của ESA nắm bắt được mức độ cháy rừng ở châu
+                            Âu</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-righttoleft">
+                    <img src="assets/img/item-04.jpg" alt="">
+                    <div class="inner-title">
+                        <a  href="./item4.html" target="_blank">Na Uy phạt Meta 1 TRIỆU vương miện mỗi ngày do thu thập
+                            dữ liệu cho hành vi quảng cáo</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="inner-wrap">
+                <div class="inner-item trans-lefttoright">
+                    <img src="assets/img/item-05.jpg" alt="">
+                    <div class="inner-title">
+                        <a target="_blank" href="./slide-right-bot.html" >Marvel Fusion của Đức xây dựng cơ sở laser trị giá 150
+                            triệu USD ở Mỹ</a>
+                    </div>
+
+                </div>
+                <div class="inner-item trans-lefttoright">
+                    <img src="assets/img/item-06.jpg" alt="">
+                    <div class="inner-title">
+                        <a target="_blank" href="./slide-right-bot.html">Công ty công nghệ hàng không vũ trụ phát hành 'tín dụng'
+                            giảm vệt</a>
+                    </div>
+
+                </div>
+                <div class="inner-item trans-righttoleft">
+                    <img src="assets/img/item-07.jpg" alt="">
+                    <div class="inner-title">
+                        <a href="./item12.html" target="_blank">Thế giới Dev thương tiếc sự mất mát của người sáng tạo Vim Bram
+                            Moolenaar</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-righttoleft">
+                    <img src="assets/img/item-08.jpg" alt="">
+                    <div class="inner-content">
+                        <div class="inner-title">
+                            <a target="_blank" href="./slide-left-bot.html">Những người chơi fintech châu Âu đang chuẩn bị cho sự hợp nhất thị trường</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="inner-wrap">
+                <div class="inner-item trans-lefttoright">
+                    <img src="assets/img/item-09.jpg" alt="">
+                    <div class="inner-title">
+                        <a target="_blank" href="./slide-right-top-left.html">Nghiên cứu cho thấy việc áp dụng robot khiến lợi
+                            nhuận giảm xuống trước khi chúng tăng
+                            lên</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-lefttoright">
+                    <img src="assets/img/item-10.jpg" alt="">
+                    <div class="inner-title">
+                        <a href="./html/item12.html">Airbus tham gia sứ mệnh xuyên Đại Tây Dương để chế tạo thiết bị
+                            thay thế ISS</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-righttoleft">
+                    <img src="assets/img/item-11.jpg" alt="">
+                    <div class="inner-title">
+                        <a target="_blank" href="./item4.html">AFP của Pháp kiện Twitter về việc không thanh toán để hiển thị tin
+                            tức</a>
+                    </div>
+                </div>
+                <div class="inner-item trans-righttoleft">
+                    <img src="assets/img/item-12.jpg" alt="">
+                    <div class="inner-title">
+                        <a target="_blank" href="./item12.html" target="_blank">Meta chịu thua áp lực của EU, sẽ tìm kiếm sự đồng ý của
+                            người dùng cho các quảng cáo được nhắm mục tiêu</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--GetNews-->
+    <section class="getNews">
+        <div class="container-getNews">
+            <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>
+            <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+            <input type="email" class="email" placeholder="you@email.com">
+            <input type="button" class="button" value="Đăng ký">
+            <br>
+            <div class="check flex">
+                <input type="checkbox" id="agree">
+                <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử
+                    lý dữ liệu cá nhân của tôi*</p>
+            </div>
+            <div class="list-media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </section>
+    <!-- TRENDING SEARCH  -->
+    <section class="trendingSearch container section">
+        <div class="heading">
+            <h1>Tìm kiếm nổi bật</h1>
+        </div>
+        <div class="wrapper__trendS">
+            <div class="carousel__trendS" id="trendS">
+                <div class="card">
+                    <div class="img">
+                        <img src="./assets/img/trendingSearch1.png" alt="">
+                    </div>
+                    <div class="trendS__content">
+                        <div class="card__title">
+                            <h3>Vai trò của trí tuệ nhân tạo trong hóa học</h3>
+                        </div>
+                        <p>Ứng dụng Trí tuệ nhân tạo và Hóa học để chăm sóc sức khỏe chủ yếu tập trung vào khám phá và
+                            phát triển thuốc.
+                        <p>
+                    </div>
+                    <a href="#" target="_blank" class="trendS__link">Xem thêm <i class="fa fa-caret-down"></i></a>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./assets/img/trendingSearch2.jpg" alt="">
+                    </div>
+                    <div class="trendS__content">
+                        <div class="card__title">
+                            <h3>Vai trò của di truyền học trong thể hình</h3>
+                        </div>
+                        <p>Gen của bạn ảnh hưởng đến sự phát triển cơ bắp như thế nào</p>
+                    </div>
+                    <a href="#" target="_blank" class="trendS__link">Xem thêm <i class="fa fa-caret-down"></i></a>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./assets/img/trendingSearch3.jpg" alt="">
+                    </div>
+                    <div class="trendS__content">
+                        <div class="card__title">
+                            <h3>Cánh tay robot phóng lên vũ trụ trên các vệ tinh OneSat của Airbus</h3>
+                        </div>
+                        <p>Một cánh tay robot chỉ do các nhà sản xuất châu Âu chế tạo đã vượt qua đánh giá đủ điều kiện
+                            để phóng vào vũ trụ trên dãy vệ tinh OneSat</p>
+                    </div>
+                    <a href="#" target="_blank" class="trendS__link">Xem thêm <i class="fa fa-caret-down"></i></a>
+                </div>
+
+            </div>
+            <div id="right" class="next btns"><i class="fa fa-angle-right"></i></div>
+            <div id="left" class="prev btns"><i class="fa fa-angle-left"></i></div>
+        </div>
+    </section>
+
+    <!-- WORK US  -->
+    <section class="workUs section container">
+        <div class="heading">
+            <h1>Làm việc với chúng tôi</h1>
+        </div>
+        <div class="workUs__content">
+            <div class="workUs__left">
+                <div class="workUs__text">
+                    Tạp chí KHOA HỌC VÀ CUỘC SỐNG chiếm vị trí trung tâm trong ngành công nghệ và các vấn đề về cuộc
+                    sống, cung cấp các bài tạp chí khoa học uy tín, sáng tạo, các sự kiện công nghệ hấp dẫn, các chương
+                    trình đổi mới theo yêu cầu và các vị trí văn phòng đắc địa ở TP.HCM. Bạn muốn thu hút đọc giả hiệu
+                    quả hơn, đổi mới kiến thức và định vị thương hiệu của mình trước những đọc giả.
+                </div>
+            </div>
+            <div class="workUs__right">
+                <div class="workUs__btns">
+                    <button class="send">Gửi bài viết</button>
+                    <button class="login">Đăng kí</button>
+                </div>
+                <div class="workUs__item">
+                    <a href="#"><i class="fa fa-book"></i>Số hiện tại</a>
+                    <a href="#"><i class="fa fa-list"></i>Số bài viết</a>
+                    <a href="#"><i class="fa fa-eye"></i>Bài viết đọc nhiều</â>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer__text container">
+            <div class="footer__logo">
+                <img src="./assets/img/logo.png" alt="logo img">
+                <ul class="footer__icon">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h2>Thông tin liên hệ</h2>
+                <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                    Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+                </p>
+                <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                    TP.HCM, Việt Nam</p>
+                <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                            class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+                <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                        thoại/Fax: (+84)36 32 302 688</a></p>
+            </div>
+            <div class="footer__rules">
+                <h2>Chính sách và điều khoản</h2>
+                <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+                <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+                <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+                <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+                <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+        </div>
+    </footer>
+
+    <!-- GO TO TOP  -->
+    <div><a id="gototop" href="#"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+    <!-- MODAL  -->
+
+
+    <script src="./assets/js/trendingS.js"></script>
+    <script src="./assets/js/loadJSON.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

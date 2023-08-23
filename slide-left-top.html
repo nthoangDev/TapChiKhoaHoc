@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tạp chí khoa học, Khoa học và cuộc sống, Khoa học">
+    <title>Khoa học và Cuộc sống</title>
+    <link rel="shortcut icon" href="./assets/img/iconshortcut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-page1.css">
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="./assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/login.js"></script>
+</head>
+<body>
+    <!--Go to top-->
+    <div><a id="gototop" href="#" ><i class="fa-solid fa-arrow-up"></i></a></div>
+     <!-- LOGIN & SIGNIN  -->
+     <div class="form-overlay">
+    </div>
+    <div class="form-modal-sign-up">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng kí</h3>
+
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password-again" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-sign-up" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-modal-login">
+        <div class="form-body">
+            <div class="form-inner">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3 class="register">Đăng nhập</h3>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-group">
+                            <input type="email" class="your-email" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="your-password" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="form-control flex ">
+
+                        <button class="register-btn">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="form-social flex">
+                        <a href="#" class="conection-fb">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Kết nối với facebook</a>
+                        <a href="#" class="connection-gg">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                            Kết nối với google
+                        </a>
+                        <div id="close-login" class="close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header id="myHeader">
+        <div class="container-header">
+            <div class="main-header flex">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="menu-header-container">
+                    <div class="top-header flex">
+                        <div class="search">
+                            <input type="text" class="timKiem" id="kw" placeholder="Nhập nội dung tìm kiếm...">
+                            <input type="button" value="Tìm kiếm" class="button-search" id="btnSearch">
+                            <ul id="suggest"></ul>
+                        </div>
+                        <div class="login-sign-up flex">
+                            <a id="Login" href="#"><i class="fa fa-user-alt"></i> Login</a>
+                            <a id="Sign-up" href="#"><i class="fas fa-sign-in-alt"></i> Sign up</a>
+                        </div>
+                    </div>
+                    <div id="mobile-menu" class="menu-small">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-header flex" id="menu">
+                        <li class="line active"><a href="#">Trang chủ</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+ <!--End Header-->
+ <div class="main">
+        <div class="title-head">
+            <h1>Công nghệ đang phá vỡ các rào cản về khả năng tiếp cận trong giao thông vận tải — đây là cách</h1>
+            <h3>Một trong số ít kỹ sư phần mềm mù của châu Âu giải thích</h3>
+            <p>Ngày 1 tháng 8 năm 2023 - 7:00 sáng</p>
+        </div>
+       <div class="main-content flex">
+            <div class="title-main flex">
+                <div class="title-main-left">
+                    <img src="./assets/img/tac-gia-2.jpg" alt="">
+                    <p>Câu chuyện bởi:</p>
+                    <p>Ioanna Lykiardopoulou</p>
+                </div>
+                <div class="title-main-right">
+                    <img src="./assets/img/page2.jpg" alt="">
+                    <p>Theo WHO , người khuyết tật chiếm 16% dân số thế giới. Họ cũng thấy việc đi lại khó khăn hơn gấp 15 lần so với những người không bị khuyết tật. Nhưng để tính di động thực sự bền vững, nó phải vượt ra ngoài việc giảm lượng khí thải; nó phải được bao gồm và phục vụ cho mọi thành viên của xã hội. </p>
+                    </br>
+                    <p>Cuối cùng, công nghệ đại diện cho một ngọn hải đăng hy vọng cũng như một công cụ vô giá. Để tìm hiểu thêm về vai trò của nó trong việc hỗ trợ phương tiện giao thông có thể tiếp cận trên toàn cầu, tôi đã nói chuyện với Jonathan Chacón Barbero, Kỹ sư phần mềm trợ năng cao cấp tại Cabify .</p>                       
+                    </br>
+                    <p>Chacón Barbero đã tham gia mở rộng quy mô gọi xe vào năm 2019 và là người đứng sau menu hỗ trợ tiếp cận của ứng dụng . Ông đã có nhiều năm làm việc trong lĩnh vực thiết kế và phát triển các ứng dụng có thể truy cập, đồng thời làm việc với tư cách là nhà tư vấn và giảng viên về khả năng truy cập. Ông cũng là một trong số ít kỹ sư phần mềm mù ở châu Âu.</p>                       
+                    </br>
+                    <p>Chacón Barbero nói: “Lần đầu tiên tôi có một chiếc máy tính cá nhân khi còn nhỏ, đó là tình yêu sét đánh. “Đó là lúc tôi quyết định mình muốn trở thành một nhà khoa học máy tính.” Năm 5 tuổi, anh ấy đã xây dựng chương trình phần mềm đầu tiên của mình và khi 9 tuổi, anh ấy quyết định tập trung vào phần cứng.</p>
+                    </br>
+                    <p>Chacón Barbero có thể nhìn bằng mắt phải cho đến năm 15 tuổi, lúc đó ông mất hoàn toàn thị lực, thay vào đó, ông phải làm việc trên phần mềm.</p>
+                    </br>
+                    <p>Anh nhớ lại: “Khoảnh khắc tồi tệ nhất trong cuộc đời tôi là khi tôi bị mù và tôi phải không tiếp xúc với công nghệ trong ba tháng. “Tôi không biết chữ nổi. Tôi không hiểu máy tính cho người mù. Tôi đã không biết gì về thế giới mù quáng. Tôi phải hiểu và nghiên cứu mọi thứ. Tôi nghĩ tại thời điểm đó, tôi đã quyết tâm cho phần còn lại của cuộc đời mình.”</p>            
+                    </br>
+                    <p>Anh ấy nhấn mạnh rằng kể từ thời điểm này trở đi, công nghệ có ý nghĩa kép trong cuộc đời anh ấy: nó không chỉ là niềm đam mê mà còn là công cụ để giải quyết những thách thức liên quan đến tình trạng của anh ấy.</p>               
+                    </br>
+                    <p>Ông nói thêm: “Công nghệ giúp chúng tôi vượt qua giới hạn của mình. và đó là những gì anh ấy bắt đầu làm.</p>       
+                    </br>
+                    <p><strong>Rào cản tiếp cận và tác động</strong></p>
+                    <br>
+                    <p>Những thách thức về giao thông mà người khuyết tật phải đối mặt vượt xa việc thiếu đường dốc tiếp cận. Trong số những thứ khác, chúng bao gồm các phương tiện không thể tiếp cận; lề đường, lối băng qua đường và vỉa hè được thiết kế kém; và biển báo không tồn tại hoặc không thể tiếp cận, thông tin tìm đường và lập kế hoạch hành trình.</p>
+                    <br>
+                    <p>Hơn nữa, các nghiên cứu đã chỉ ra rằng các rào cản xã hội và cơ sở hạ tầng khiến các phương tiện giao thông cụ thể không khả dụng cho khách du lịch khuyết tật và tăng thời gian hành trình. Do đó, người khuyết tật thực hiện ít chuyến đi hơn và di chuyển quãng đường ngắn hơn.</p>
+                    <br>
+                    <p>Chẳng hạn, tại Vương quốc Anh, một cuộc khảo sát năm 2022 cho thấy cứ năm người khuyết tật thì có một người không thể đi lại do thiếu các phương tiện giao thông phù hợp, trong khi một phần tư cho biết thái độ tiêu cực từ những hành khách khác đã ngăn cản họ sử dụng phương tiện giao thông công cộng. Chacón Barbero chia sẻ một ví dụ từ kinh nghiệm sử dụng dịch vụ taxi của anh ấy.</p>
+                    <br>
+                    <p>“Tôi phải gọi một hãng taxi. Tôi giữ cuộc gọi khi tôi đang đợi tài xế đến. Nhưng có một vấn đề: anh ấy không biết rằng tôi không thể nhìn thấy chiếc xe và tôi không thể biết chiếc xe ở đâu. Tôi lãng phí thời gian và tiền bạc vì không có sự giao tiếp trực tiếp giữa tài xế và người dùng.”</p>
+                    <br>
+                    <p><strong>Đưa công nghệ vào công việc</strong></p>
+                    <br>
+                    <p>Một cách lạc quan, trong vài năm qua đã chứng kiến ​​ngày càng nhiều sáng kiến ​​của cả nhà nước và tư nhân sử dụng các công nghệ mới để vượt qua thách thức về khả năng tiếp cận phổ cập.</p>
+                    <br>
+                    <p>Chẳng hạn, thành phố Lyon đã phát triển một ứng dụng giao thông công cộng sử dụng dữ liệu thời gian thực để hỗ trợ những người khuyết tật đi lại, bao gồm một tính năng giúp họ xác định hành trình dễ tiếp cận nhất và các tuyến đường ngắn nhất. Các công ty khởi nghiệp châu Âu cũng đang hoạt động tích cực trong lĩnh vực này. Hãy nghĩ đến Wayfindr có trụ sở tại Luân Đôn , giúp những người khiếm thị đi du lịch độc lập bằng điều hướng âm thanh. Hoặc Noteabox có Ứng dụng nút cho phép người dùng nhấn các nút — chẳng hạn như các nút trên đường dành cho người đi bộ — thông qua điện thoại thông minh của họ.</p>
+                    <br>
+                    <p>Cabify trình bày một ví dụ khác về cách công nghệ có thể tăng cường tính toàn diện trong các dịch vụ gọi xe. Khi Chacón Barbero tham gia mở rộng quy mô ở Tây Ban Nha, bước đầu tiên của anh ấy là xây dựng nền tảng ngữ nghĩa cho giao diện kỹ thuật số của ứng dụng để cho phép bổ sung dần dần nhiều tính năng trợ năng và hồ sơ khuyết tật. Trong cùng năm đó, ứng dụng của Cabify đã có thể truy cập được 100% đối với người mù.</p>
+                    <br>
+                    <p>Vào năm 2020, công ty đã ra mắt menu trợ năng. Kể từ đó, nó đã bổ sung thêm các chức năng và mở rộng các nhóm đối tượng của mình, chẳng hạn như người khiếm thính, người khuyết tật về nhận thức và người già. Chacón Barbero cho biết: “Chúng tôi đã tạo một menu đặc biệt dành cho khả năng truy cập trong hành trình của mình để cung cấp cho người dùng khả năng xác định các nhu cầu đặc biệt của họ.</p>
+                    <br>
+                    <p>Người dùng có thể chọn giữa ba tùy chọn được hiển thị trong hình bên dưới:</p>
+                    <img src="./assets/img/page-2-content.webp" alt="">
+                </div>
+            </div>
+            <aside class="sidebarRelated">
+                <h2>Các bài viết phổ biến</h2>
+                <ol>
+                    <li>Alchemy của Ireland chiến đấu với rác thải điện tử bằng cách mang đến cho các sản phẩm của Apple một cuộc sống mới</li>
+                    <li>Thủ tướng Đức nói thúc đẩy năng lượng tái tạo sẽ vực dậy nền kinh tế</li>
+                    <li>Thông tin cơ bản về pin EV: Tất cả những gì bạn cần biết về kW, kWh và tốc độ sạc</li>
+                    <li>Động cơ trung tâm so với dẫn động giữa: Loại ebike nào phù hợp nhất với bạn?</li>
+
+                </ol>
+            </aside>
+    </div>
+ </div>
+ <section class="getNews">
+    <div class="container-getNews">
+        <h2 class="inner-title">Nhận bản tin Khoa học và Cuộc sống</h2>   
+        <p style="color: rgb(203, 207, 211);">Luôn cập nhật những thông tin mới nhất và hay nhất.</p>
+        <input type="email" class="email" placeholder="you@email.com">
+        <input type="button" class="button" value="Đăng ký">
+        <br>
+       <div class="check flex">
+        <input type="checkbox" id="agree">
+        <p id="agree" style="color: rgb(203, 207, 211);">Tôi đồng ý cho phép Khoa học và Cuộc sống lưu trữ và xử lý dữ liệu cá nhân của tôi*</p>
+       </div>
+       <div class="list-media">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-linkedin"></i>
+       </div>
+    </div>
+
+ </section>
+ <!--Slides-->
+ <h2 style="margin-top: 1rem;font-size: 3rem;">Những bài viết liên quan</h2>
+ <div class="slide flex">
+    <div class="slide-left" >
+        <div class="slide-left-top" >
+            <img  src="./assets/img/slide-page-4.jpg" alt="Ảnh minh họa">
+            <a href="#">Phương pháp tính toán 'robomorphic' mới nhằm tăng tốc độ cho các robot chậm chạp</a>
+            <div class="overlay"></div>
+        </div>
+        <div class="slide-left-bot ">
+            <img  src="./assets/img/img-slide-2.jpg" alt="Ảnh minh họa">
+            <a href="#">Mô hình DeepMind AI mới có thể điều khiển các hành động của rô-bốt mà nó chưa bao giờ được đào tạo để thực hiện</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="slide-right">
+        <div class="slide-right-top flex">
+            <div class="slide-right-top-left ">
+               <img src="./assets/img/img-slide-3.jpg" alt="Ảnh minh họa">
+               <a href="#">Người tiên phong trong thế giới ảo nhắm mục tiêu thể thao để hồi sinh giấc mơ metaverse</a>
+               <div class="overlay"></div>
+            </div>
+            <div class="slide-right-top-right ">
+                <img src="./assets/img/img-slide-4.jpg" alt="Ảnh hình họa">
+                <a href="#">VanMoust: Các công ty khởi nghiệp có thể học được gì từ sự thăng trầm của một siêu sao xe đạp điện</a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="slide-right-bot ">
+            <img src="./assets/img/slide-page-5.jpg" alt="Ảnh minh họa">
+            <a href="#">Bạn sẽ không cần gương chiếu hậu ở Mỹ nữa — nếu bạn là xe tự lái</a>
+            <div class="overlay"></div>
+        </div>
+    </div>
+ </div>
+ <footer>
+    <div class="footer__text container">
+        <div class="footer__logo">
+            <img src="./assets/img/logo.png" alt="logo img">
+            <ul class="footer__icon">
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-flipboard"></i></a></li>
+                <li><a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h2>Thông tin liên hệ</h2>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS1: Trụ sở tòa soạn Số 7-9 Nguyễn Bỉnh Khiêm,
+                Bến Nghé, Quận 1, Thành phố Hồ Chí Minh.
+            </p>
+            <p class="flex"> <i class="fa-solid fa-location-dot"></i>CS2: 97 Võ Văn Tần, phường Võ Thị Sáu, quận 3,
+                TP.HCM, Việt Nam</p>
+            <p class="footer__item"><a href="mailto:khoahocvacongsong@ou.edu.vn"><i
+                        class="fa-solid fa-envelope"></i>khoahocvacongsong@ou.edu.vn</a></p>
+            <p class="footer__item"><a href="tel:+ (+84)36 32 302 688"><i class="fa-solid fa-phone"></i>Điện
+                    thoại/Fax: (+84)36 32 302 688</a></p>
+        </div>
+        <div class="footer__rules">
+            <h2>Chính sách và điều khoản</h2>
+            <p>Cơ quan chủ quản: Trường Đại học Mở Thành phố Hồ Chí Minh</p>
+            <p>Cơ quan xuất bản: Tạp chí Khoa học và Cuộc sống</p>
+            <p>Giấy phép trang thông tin điện tử tổng hợp số: 03/GP-TTĐT</p>
+            <p>Giấy phép Hoạt động Tạp chí in và Tạp chí điện tử số: 559/GP-BTTTT</p>
+            <p>Do Bộ Thông tin và Truyền thông cấp ngày 30-08-2021</p>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy; 2021—2023, Website Khoa học và Cuộc sống bởi Đại học Mở TPHCM.</p>
+    </div>
+</footer>
+<!--End Slides-->
+<script src="./assets/js/trendingS.js"></script>
+<script src="./assets/js/loadJSON.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
